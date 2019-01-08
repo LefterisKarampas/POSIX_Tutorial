@@ -1,6 +1,6 @@
 .PHONY: pipes clean
 
-all: pipes queues shared_memory
+all: pipes queues shared_memory signals
 	
 pipes:
 	gcc -o pipes pipes.c
@@ -11,5 +11,8 @@ queues:
 shared_memory:
 	gcc -o shared_memory shared_memory.c
 
+signals:
+	gcc -o signals signals.c
+
 clean:
-	rm -rf pipes message_queues shared_memory
+	rm -rf pipes message_queues shared_memory signals
