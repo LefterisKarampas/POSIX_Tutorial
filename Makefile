@@ -1,4 +1,4 @@
-.PHONY: pipes clean
+.PHONY: pipes clean queues shared_memory signals
 
 all: pipes queues shared_memory signals
 	
